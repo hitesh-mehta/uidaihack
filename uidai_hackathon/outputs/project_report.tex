@@ -252,9 +252,11 @@ We analyzed monthly patterns across all three datasets to identify seasonal tren
 \item \textbf{Year-over-Year Growth:} Consistent 8\% annual growth in biometric updates
 \end{itemize}
 
-\fbox{\parbox{0.95\textwidth}{
-\centering \textit{[Temporal Trends Chart: Monthly aggregates for Biometric, Enrolment, and Demographic updates from 2019-2024]}
-}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{trends.png}
+\caption{Monthly Biometric, Enrolment, and Demographic Updates (2019-2024)}
+\end{figure}
 
 \subsection{Geographic Distribution Analysis}
 Using choropleth maps and hierarchical sunburst charts, we analyzed state and district-level patterns.
@@ -275,9 +277,11 @@ Using choropleth maps and hierarchical sunburst charts, we analyzed state and di
 \item Certain tribal districts in Jharkhand and Odisha show persistent low engagement
 \end{itemize}
 
-\fbox{\parbox{0.95\textwidth}{
-\centering \textit{[India Choropleth Heatmap: Biometric update density by state]}
-}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{india_heatmap.png}
+\caption{Pan-India Choropleth Heatmap of Biometric Update Density}
+\end{figure}
 
 \subsection{Hierarchical Drill-Down Analysis}
 Our interactive sunburst visualization enables exploration from national to district level.
@@ -289,9 +293,11 @@ Our interactive sunburst visualization enables exploration from national to dist
 \item Urban-rural divide clearly visible in district-level data
 \end{itemize}
 
-\fbox{\parbox{0.95\textwidth}{
-\centering \textit{[Sunburst Chart: India $\rightarrow$ State $\rightarrow$ District hierarchical view]}
-}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{age_pie.png}
+\caption{Age Distribution Analysis Across Aadhaar Operations}
+\end{figure}
 
 \newpage
 
@@ -337,9 +343,11 @@ $<$ 50 & Digital Divide Zone & Urgent intervention required \\
 \item DDI improves by avg. 8 points in districts with new bank branches
 \end{itemize}
 
-\fbox{\parbox{0.95\textwidth}{
-\centering \textit{[DDI Choropleth Map: Color-coded by Digital Divide Index, with intervention zones highlighted]}
-}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{clusters.png}
+\caption{District Clustering and Digital Divide Analysis}
+\end{figure}
 
 \newpage
 
@@ -402,9 +410,11 @@ forecast = model.forecast(steps=6)
 \item \textbf{Trend:} 8\% YoY growth trajectory continues
 \end{itemize}
 
-\fbox{\parbox{0.95\textwidth}{
-\centering \textit{[Forecast Chart: Historical data with train/test split and 6-month projection with confidence bands]}
-}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{forecast_biometric.png}
+\caption{6-Month Biometric Forecast with Confidence Intervals}
+\end{figure}
 
 \newpage
 
@@ -462,9 +472,11 @@ Validates data integrity by checking if first-digit distribution follows natural
 
 \textbf{Finding:} Deviation in digits 7-9 suggests potential data aggregation or rounding in certain districts -- flagged for manual review.
 
-\fbox{\parbox{0.95\textwidth}{
-\centering \textit{[Benford's Law Chart: Expected vs Observed first-digit distribution]}
-}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{anomaly.png}
+\caption{Anomaly Detection Results - Isolation Forest Analysis}
+\end{figure}
 
 \newpage
 
