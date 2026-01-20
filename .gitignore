@@ -1,0 +1,28 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+.env
+venv/
+.venv/
+
+# Data (Too large for GitHub)
+uidai_hackathon/data/raw/*.csv
+uidai_hackathon/data/processed/*.csv
+*.csv
+
+# Maintain structure but ignore files
+!uidai_hackathon/data/mappings/*.csv
+!uidai_hackathon/data/geojson/*.geojson
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Analysis outputs (You might want to keep figures for README, but ignore loose CSVs)
+uidai_hackathon/outputs/*.csv
+
+# Legacy/Imported folder (if you want to exclude the mess)
+AADHAAR-HACKATHON/
