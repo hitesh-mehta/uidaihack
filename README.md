@@ -1,4 +1,4 @@
-<![CDATA[# 📊 Aadhaar Analytics Dashboard
+# 📊 Aadhaar Analytics Dashboard
 
 **Unlocking Societal Trends in Aadhaar: A Data-Driven Policy Framework**
 
@@ -193,4 +193,4 @@ This project is licensed under the MIT License.
 ---
 
 *Built with ❤️ for UIDAI Hackathon 2026*
-]]>
+
