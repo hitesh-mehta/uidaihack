@@ -1,8 +1,7 @@
 Original_State,Original_District,Corrected_State,Corrected_District,Notes
-Andaman & Nicobar Islands,Andamans,Andaman and Nicobar Islands,Andamans,
-Andaman & Nicobar Islands,Nicobars,Andaman and Nicobar Islands,Nicobars,Possible duplicate of: Nicobar
-Andaman & Nicobar Islands,South Andaman,Andaman and Nicobar Islands,South Andaman,
+Andaman and Nicobar Islands,Andamans,Andaman and Nicobar Islands,Andamans,
 Andaman and Nicobar Islands,Nicobar,Andaman and Nicobar Islands,Nicobar,Possible duplicate of: Nicobars
+Andaman and Nicobar Islands,Nicobars,Andaman and Nicobar Islands,Nicobars,Possible duplicate of: Nicobar
 Andaman and Nicobar Islands,North And Middle Andaman,Andaman and Nicobar Islands,North And Middle Andaman,
 Andaman and Nicobar Islands,South Andaman,Andaman and Nicobar Islands,South Andaman,
 Andhra Pradesh,Adilabad,Andhra Pradesh,Adilabad,
@@ -50,6 +49,8 @@ Andhra Pradesh,Vizianagaram,Andhra Pradesh,Vizianagaram,
 Andhra Pradesh,Warangal,Andhra Pradesh,Warangal,
 Andhra Pradesh,West Godavari,Andhra Pradesh,West Godavari,
 Andhra Pradesh,Y. S. R,Andhra Pradesh,Y. S. R,
+Andhra Pradesh,chittoor,Andhra Pradesh,chittoor,Possible duplicate of: Chittoor
+Andhra Pradesh,rangareddi,Andhra Pradesh,rangareddi,Possible duplicate of: Rangareddi
 Arunachal Pradesh,Anjaw,Arunachal Pradesh,Anjaw,
 Arunachal Pradesh,Changlang,Arunachal Pradesh,Changlang,
 Arunachal Pradesh,Dibang Valley,Arunachal Pradesh,Dibang Valley,
@@ -206,14 +207,11 @@ Chhattisgarh,Surajpur,Chhattisgarh,Surajpur,
 Chhattisgarh,Surguja,Chhattisgarh,Surguja,
 Chhattisgarh,Uttar Bastar Kanker,Chhattisgarh,Uttar Bastar Kanker,
 Dadra & Nagar Haveli,Dadra & Nagar Haveli,Dadra and Nagar Haveli and Daman and Diu,Dadra & Nagar Haveli,Possible duplicate of: Dadra and Nagar Haveli
-Dadra and Nagar Haveli,Dadra and Nagar Haveli,Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli,Possible duplicate of: Dadra & Nagar Haveli
 Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli,Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli,Possible duplicate of: Dadra & Nagar Haveli
 Dadra and Nagar Haveli and Daman and Diu,Daman,Dadra and Nagar Haveli and Daman and Diu,Daman,
 Dadra and Nagar Haveli and Daman and Diu,Diu,Dadra and Nagar Haveli and Daman and Diu,Diu,
 Daman & Diu,Daman,Dadra and Nagar Haveli and Daman and Diu,Daman,
 Daman & Diu,Diu,Dadra and Nagar Haveli and Daman and Diu,Diu,
-Daman and Diu,Daman,Dadra and Nagar Haveli and Daman and Diu,Daman,
-Daman and Diu,Diu,Dadra and Nagar Haveli and Daman and Diu,Diu,
 Darbhanga,Near University Thana,Bihar,Near University Thana,
 Delhi,Central Delhi,Delhi,Central Delhi,
 Delhi,East Delhi,Delhi,East Delhi,
@@ -316,21 +314,6 @@ Himachal Pradesh,Sirmaur,Himachal Pradesh,Sirmaur,
 Himachal Pradesh,Solan,Himachal Pradesh,Solan,
 Himachal Pradesh,Una,Himachal Pradesh,Una,
 Jaipur,Near meera hospital,Rajasthan,Near meera hospital,
-Jammu & Kashmir,Anantnag,Jammu and Kashmir,Anantnag,
-Jammu & Kashmir,Badgam,Jammu and Kashmir,Badgam,
-Jammu & Kashmir,Bandipur,Jammu and Kashmir,Bandipur,
-Jammu & Kashmir,Baramula,Jammu and Kashmir,Baramula,Possible duplicate of: Baramulla
-Jammu & Kashmir,Doda,Jammu and Kashmir,Doda,
-Jammu & Kashmir,Jammu,Jammu and Kashmir,Jammu,
-Jammu & Kashmir,Kargil,Jammu and Kashmir,Kargil,
-Jammu & Kashmir,Kathua,Jammu and Kashmir,Kathua,
-Jammu & Kashmir,Kupwara,Jammu and Kashmir,Kupwara,
-Jammu & Kashmir,Leh (ladakh),Jammu and Kashmir,Leh (ladakh),
-Jammu & Kashmir,Pulwama,Jammu and Kashmir,Pulwama,
-Jammu & Kashmir,Punch,Jammu and Kashmir,Punch,
-Jammu & Kashmir,Rajauri,Jammu and Kashmir,Rajauri,Possible duplicate of: Rajouri
-Jammu & Kashmir,Srinagar,Jammu and Kashmir,Srinagar,
-Jammu & Kashmir,Udhampur,Jammu and Kashmir,Udhampur,Possible duplicate of: udhampur
 Jammu and Kashmir,?,Jammu and Kashmir,?,
 Jammu and Kashmir,Anantnag,Jammu and Kashmir,Anantnag,
 Jammu and Kashmir,Badgam,Jammu and Kashmir,Badgam,
@@ -348,9 +331,11 @@ Jammu and Kashmir,Kishtwar,Jammu and Kashmir,Kishtwar,
 Jammu and Kashmir,Kulgam,Jammu and Kashmir,Kulgam,
 Jammu and Kashmir,Kupwara,Jammu and Kashmir,Kupwara,
 Jammu and Kashmir,Leh,Jammu and Kashmir,Leh,
+Jammu and Kashmir,Leh (ladakh),Jammu and Kashmir,Leh (ladakh),
 Jammu and Kashmir,Poonch,Jammu and Kashmir,Poonch,
 Jammu and Kashmir,Pulwama,Jammu and Kashmir,Pulwama,
 Jammu and Kashmir,Punch,Jammu and Kashmir,Punch,
+Jammu and Kashmir,Rajauri,Jammu and Kashmir,Rajauri,Possible duplicate of: Rajouri
 Jammu and Kashmir,Rajouri,Jammu and Kashmir,Rajouri,Possible duplicate of: Rajauri
 Jammu and Kashmir,Ramban,Jammu and Kashmir,Ramban,
 Jammu and Kashmir,Reasi,Jammu and Kashmir,Reasi,
@@ -639,12 +624,12 @@ Nagaland,Tuensang,Nagaland,Tuensang,
 Nagaland,Wokha,Nagaland,Wokha,
 Nagaland,Zunheboto,Nagaland,Zunheboto,
 Nagpur,Near Uday nagar NIT garden,Maharashtra,Near Uday nagar NIT garden,
-ODISHA,NUAPADA,Odisha,NUAPADA,
 Odisha,ANGUL,Odisha,ANGUL,Possible duplicate of: ANUGUL
 Odisha,ANUGUL,Odisha,ANUGUL,Possible duplicate of: ANGUL
 Odisha,Angul,Odisha,Angul,Possible duplicate of: Anugul
 Odisha,Anugal,Odisha,Anugal,
 Odisha,Anugul,Odisha,Anugul,Possible duplicate of: Angul
+Odisha,Anugul  *,Odisha,Anugul  *,
 Odisha,BALANGIR,Odisha,BALANGIR,
 Odisha,Balangir,Odisha,Balangir,
 Odisha,Baleshwar,Odisha,Baleshwar,Possible duplicate of: Baleswar
@@ -664,6 +649,7 @@ Odisha,JAJPUR,Odisha,JAJPUR,
 Odisha,Jagatsinghapur,Odisha,Jagatsinghapur,Possible duplicate of: Jagatsinghpur
 Odisha,Jagatsinghpur,Odisha,Jagatsinghpur,Possible duplicate of: Jagatsinghapur
 Odisha,Jajapur,Odisha,Jajapur,Possible duplicate of: Jajpur
+Odisha,Jajapur  *,Odisha,Jajapur  *,
 Odisha,Jajpur,Odisha,Jajpur,Possible duplicate of: Jajapur
 Odisha,Jharsuguda,Odisha,Jharsuguda,
 Odisha,Kalahandi,Odisha,Kalahandi,
@@ -672,6 +658,7 @@ Odisha,Kendrapara,Odisha,Kendrapara,
 Odisha,Kendujhar,Odisha,Kendujhar,
 Odisha,Khorda,Odisha,Khorda,Possible duplicate of: Khordha
 Odisha,Khordha,Odisha,Khordha,Possible duplicate of: Khorda
+Odisha,Khordha  *,Odisha,Khordha  *,
 Odisha,Koraput,Odisha,Koraput,
 Odisha,Malkangiri,Odisha,Malkangiri,
 Odisha,Mayurbhanj,Odisha,Mayurbhanj,
@@ -679,6 +666,7 @@ Odisha,NAYAGARH,Odisha,NAYAGARH,
 Odisha,NUAPADA,Odisha,NUAPADA,
 Odisha,Nabarangapur,Odisha,Nabarangapur,
 Odisha,Nayagarh,Odisha,Nayagarh,
+Odisha,Nayagarh  *,Odisha,Nayagarh  *,
 Odisha,Nuapada,Odisha,Nuapada,
 Odisha,Puri,Odisha,Puri,
 Odisha,Rayagada,Odisha,Rayagada,
@@ -688,53 +676,11 @@ Odisha,Subarnapur,Odisha,Subarnapur,
 Odisha,Sundargarh,Odisha,Sundargarh,Possible duplicate of: Sundergarh
 Odisha,Sundergarh,Odisha,Sundergarh,Possible duplicate of: Sundargarh
 Odisha,jajpur,Odisha,jajpur,
-Orissa,Angul,Odisha,Angul,Possible duplicate of: Anugul
-Orissa,Anugul,Odisha,Anugul,Possible duplicate of: Angul
-Orissa,Anugul  *,Odisha,Anugul  *,
-Orissa,Balangir,Odisha,Balangir,
-Orissa,Baleshwar,Odisha,Baleshwar,Possible duplicate of: Baleswar
-Orissa,Baleswar,Odisha,Baleswar,Possible duplicate of: Baleshwar
-Orissa,Bargarh,Odisha,Bargarh,
-Orissa,Baudh,Odisha,Baudh,
-Orissa,Bhadrak,Odisha,Bhadrak,
-Orissa,Cuttack,Odisha,Cuttack,
-Orissa,Debagarh,Odisha,Debagarh,
-Orissa,Dhenkanal,Odisha,Dhenkanal,
-Orissa,Gajapati,Odisha,Gajapati,
-Orissa,Ganjam,Odisha,Ganjam,
-Orissa,Jagatsinghapur,Odisha,Jagatsinghapur,Possible duplicate of: Jagatsinghpur
-Orissa,Jajapur,Odisha,Jajapur,Possible duplicate of: Jajpur
-Orissa,Jajapur  *,Odisha,Jajapur  *,
-Orissa,Jharsuguda,Odisha,Jharsuguda,
-Orissa,Kalahandi,Odisha,Kalahandi,
-Orissa,Kandhamal,Odisha,Kandhamal,
-Orissa,Kendrapara,Odisha,Kendrapara,
-Orissa,Kendujhar,Odisha,Kendujhar,
-Orissa,Khorda,Odisha,Khorda,Possible duplicate of: Khordha
-Orissa,Khordha,Odisha,Khordha,Possible duplicate of: Khorda
-Orissa,Khordha  *,Odisha,Khordha  *,
-Orissa,Koraput,Odisha,Koraput,
-Orissa,Malkangiri,Odisha,Malkangiri,
-Orissa,Mayurbhanj,Odisha,Mayurbhanj,
-Orissa,Nabarangapur,Odisha,Nabarangapur,
-Orissa,Nayagarh,Odisha,Nayagarh,
-Orissa,Nayagarh  *,Odisha,Nayagarh  *,
-Orissa,Nuapada,Odisha,Nuapada,
-Orissa,Puri,Odisha,Puri,
-Orissa,Rayagada,Odisha,Rayagada,
-Orissa,Sambalpur,Odisha,Sambalpur,
-Orissa,Sonapur,Odisha,Sonapur,
-Orissa,Subarnapur,Odisha,Subarnapur,
-Orissa,Sundargarh,Odisha,Sundargarh,Possible duplicate of: Sundergarh
-Orissa,Sundergarh,Odisha,Sundergarh,Possible duplicate of: Sundargarh
-Pondicherry,Cuddalore,Puducherry,Cuddalore,
-Pondicherry,Karaikal,Puducherry,Karaikal,
-Pondicherry,Pondicherry,Puducherry,Pondicherry,
-Pondicherry,Viluppuram,Puducherry,Viluppuram,
-Pondicherry,Yanam,Puducherry,Yanam,
+Puducherry,Cuddalore,Puducherry,Cuddalore,
 Puducherry,Karaikal,Puducherry,Karaikal,
 Puducherry,Pondicherry,Puducherry,Pondicherry,
 Puducherry,Puducherry,Puducherry,Puducherry,
+Puducherry,Viluppuram,Puducherry,Viluppuram,
 Puducherry,Yanam,Puducherry,Yanam,
 Punjab,Amritsar,Punjab,Amritsar,
 Punjab,Barnala,Punjab,Barnala,
@@ -871,7 +817,6 @@ Tamil Nadu,Vellore,Tamil Nadu,Vellore,
 Tamil Nadu,Villupuram,Tamil Nadu,Villupuram,Possible duplicate of: Viluppuram
 Tamil Nadu,Viluppuram,Tamil Nadu,Viluppuram,Possible duplicate of: Villupuram
 Tamil Nadu,Virudhunagar,Tamil Nadu,Virudhunagar,
-Tamilnadu,Chennai,Tamil Nadu,Chennai,
 Telangana,Adilabad,Telangana,Adilabad,
 Telangana,Bhadradri Kothagudem,Telangana,Bhadradri Kothagudem,
 Telangana,Hanumakonda,Telangana,Hanumakonda,
@@ -1026,25 +971,11 @@ Uttarakhand,Nainital,Uttarakhand,Nainital,
 Uttarakhand,Pauri Garhwal,Uttarakhand,Pauri Garhwal,
 Uttarakhand,Pithoragarh,Uttarakhand,Pithoragarh,
 Uttarakhand,Rudraprayag,Uttarakhand,Rudraprayag,Possible duplicate of: Rudraprayag *
+Uttarakhand,Rudraprayag *,Uttarakhand,Rudraprayag *,Possible duplicate of: Rudraprayag
 Uttarakhand,Tehri Garhwal,Uttarakhand,Tehri Garhwal,
 Uttarakhand,Udham Singh Nagar,Uttarakhand,Udham Singh Nagar,Possible duplicate of: Udham Singh Nagar *
+Uttarakhand,Udham Singh Nagar *,Uttarakhand,Udham Singh Nagar *,Possible duplicate of: Udham Singh Nagar
 Uttarakhand,Uttarkashi,Uttarakhand,Uttarkashi,
-Uttaranchal,Almora,Uttarakhand,Almora,
-Uttaranchal,Bageshwar,Uttarakhand,Bageshwar,
-Uttaranchal,Chamoli,Uttarakhand,Chamoli,
-Uttaranchal,Champawat,Uttarakhand,Champawat,
-Uttaranchal,Dehradun,Uttarakhand,Dehradun,
-Uttaranchal,Garhwal,Uttarakhand,Garhwal,
-Uttaranchal,Rudraprayag *,Uttarakhand,Rudraprayag *,Possible duplicate of: Rudraprayag
-Uttaranchal,Udham Singh Nagar *,Uttarakhand,Udham Singh Nagar *,Possible duplicate of: Udham Singh Nagar
-WEST BENGAL,HOOGHLY,West Bengal,HOOGHLY,
-WEST BENGAL,HOWRAH,West Bengal,HOWRAH,
-WEST BENGAL,hooghly,West Bengal,hooghly,Possible duplicate of: Hooghly
-WESTBENGAL,HOOGHLY,West Bengal,HOOGHLY,
-West  Bengal,Hooghly,West Bengal,Hooghly,"Possible duplicate of: hooghly, Hooghiy"
-West Bangal,Hooghly,West Bengal,Hooghly,"Possible duplicate of: hooghly, Hooghiy"
-West Bangal,Howrah,West Bengal,Howrah,
-West Bangal,South 24 Parganas,West Bengal,South 24 Parganas,"Possible duplicate of: South 24 Pargana, South 24 parganas"
 West Bengal,Alipurduar,West Bengal,Alipurduar,
 West Bengal,Amta - II,West Bengal,Amta - II,
 West Bengal,Bally Jagachha,West Bengal,Bally Jagachha,
@@ -1107,12 +1038,3 @@ West Bengal,east midnapore,West Bengal,east midnapore,"Possible duplicate of: Ea
 West Bengal,hooghly,West Bengal,hooghly,Possible duplicate of: Hooghly
 West Bengal,nadia,West Bengal,nadia,
 West Bengli,Hooghly,West Bengal,Hooghly,"Possible duplicate of: hooghly, Hooghiy"
-West bengal,Hooghly,West Bengal,Hooghly,"Possible duplicate of: hooghly, Hooghiy"
-West bengal,South 24 Parganas,West Bengal,South 24 Parganas,"Possible duplicate of: South 24 Pargana, South 24 parganas"
-West bengal,hooghly,West Bengal,hooghly,Possible duplicate of: Hooghly
-Westbengal,Hooghly,West Bengal,Hooghly,"Possible duplicate of: hooghly, Hooghiy"
-Westbengal,Howrah,West Bengal,Howrah,
-andhra pradesh,chittoor,Andhra Pradesh,chittoor,Possible duplicate of: Chittoor
-andhra pradesh,rangareddi,Andhra Pradesh,rangareddi,Possible duplicate of: Rangareddi
-odisha,Gajapati,Odisha,Gajapati,
-west Bengal,South 24 Parganas,West Bengal,South 24 Parganas,"Possible duplicate of: South 24 Pargana, South 24 parganas"
