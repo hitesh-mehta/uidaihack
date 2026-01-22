@@ -10,3 +10,7 @@ matplotlib
 seaborn
 folium
 geopandas
+groq
+sentence-transformers
+qdrant-client
+python-dotenv

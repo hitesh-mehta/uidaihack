@@ -81,10 +81,11 @@ from pathlib import Path
 
 # Add src to python path to allow imports if running from root
 current_file = Path(__file__).resolve()
-project_root = current_file.parent.parent.parent # src/dashboard/app.py -> src/dashboard -> src -> uidai_hackathon
+project_root = current_file.parent.parent.parent.parent # src/dashboard/app.py -> src/dashboard -> src -> uidai_hackathon -> uidaihack
 sys.path.append(str(project_root))
 
 from uidai_hackathon.src import config
+from uidai_hackathon.src.rag.rag_chatbot import RAGChatbot
 
 @st.cache_data
 def load_data():
@@ -100,7 +101,17 @@ def load_data():
     if os.path.exists(config.MASTER_ENROLMENT_PATH):
         df_enrol = pd.read_csv(config.MASTER_ENROLMENT_PATH)
         df_enrol['Date'] = pd.to_datetime(df_enrol['Date'], dayfirst=True, errors='coerce')
-        # Ensure Age cols are numeric if needed, but preprocessor did it.
+        
+        # Calculate Total_Enrolment if missing (RAG data format)
+        if 'Total_Enrolment' not in df_enrol.columns:
+            # Ensure age columns exist and are numeric
+            age_cols = ['Age_0_5', 'Age_5_17', 'Age_18_greater']
+            for col in age_cols:
+                if col not in df_enrol.columns:
+                    df_enrol[col] = 0
+            
+            df_enrol['Total_Enrolment'] = df_enrol['Age_0_5'] + df_enrol['Age_5_17'] + df_enrol['Age_18_greater']
+                
     else:
         df_enrol = pd.DataFrame(columns=['Date', 'State', 'District', 'Total_Enrolment'])
         
@@ -108,10 +119,21 @@ def load_data():
     if os.path.exists(config.MASTER_DEMO_PATH):
         df_demo = pd.read_csv(config.MASTER_DEMO_PATH)
         df_demo['Date'] = pd.to_datetime(df_demo['Date'], dayfirst=True, errors='coerce')
+        # Fix column names for demo data if needed
+        # Assuming RAG data matches somewhat, but 'Total_Demo_Updates' is key.
+        if 'Update' in df_demo.columns: # Check actual column name from inspection
+             df_demo.rename(columns={'Update': 'Total_Demo_Updates'}, inplace=True) 
+        elif 'Total_Demo_Updates' not in df_demo.columns:
+             # Try to sum up available update columns if exists
+             pass
     else:
         df_demo = pd.DataFrame(columns=['Date', 'State', 'District', 'Total_Demo_Updates'])
     
-    anomalies = pd.read_csv(config.ANOMALY_OUTPUT_PATH)
+    if os.path.exists(config.ANOMALY_OUTPUT_PATH):
+        anomalies = pd.read_csv(config.ANOMALY_OUTPUT_PATH)
+    else:
+        # Create empty dummy dataframe if anomalies not run yet
+        anomalies = pd.DataFrame(columns=['State', 'District', 'Total_Updates', 'Z_Score'])
     
     return df, df_enrol, df_demo, anomalies
 
@@ -120,6 +142,16 @@ try:
 except Exception as e:
     st.error(f"Error loading data: {e}")
     st.stop()
+
+# Initialize Chatbot
+if 'chatbot' not in st.session_state:
+    with st.spinner("Initializing AI Assistant..."):
+        try:
+            st.session_state.chatbot = RAGChatbot()
+            st.session_state.chat_history = []
+        except Exception as e:
+            st.warning(f"Failed to initialize chatbot: {e}")
+            st.session_state.chatbot = None
 
 # Helper to apply unified theme to plots
 def update_plot_layout(fig):
@@ -197,7 +229,7 @@ with col3:
 st.write("") # Spacer
 
 # Tabs
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["📈 Trends", "🗺️ Demographics", "🔮 Forecast", "🚨 Anomalies", "🧩 Clustering", "🌳 Hierarchy", "📶 Digital Divide"])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs(["📈 Trends", "🗺️ Demographics", "🔮 Forecast", "🚨 Anomalies", "🧩 Clustering", "🌳 Hierarchy", "📶 Digital Divide", "🤖 AI Assistant"])
 
 with tab1:
     st.subheader("Temporal Trends")
@@ -469,6 +501,54 @@ with tab7:
     with col_d2:
         st.write("### Top Digitally Advanced Districts")
         st.dataframe(ddi_df[['State', 'District', 'DDI']].sort_values('DDI', ascending=False).head(20), height=400)
+
+with tab8:
+    st.subheader("🤖 Aadhaar Data Intelligence Assistant")
+    
+    if st.session_state.chatbot is None:
+        st.error("Chatbot failed to initialize. Please check logs.")
+    else:
+        col_chat1, col_chat2 = st.columns([3, 1])
+        
+        with col_chat2:
+            st.info("Ask questions about enrollment stats, demographics, and biometric updates.")
+            with st.expander("ℹ️ Data Sources", expanded=True):
+                st.write("- Aadhaar Enrolment Data")
+                st.write("- Biometric Updates")
+                st.write("- Demographic Updates")
+            
+            if st.button("🗑️ Clear History", use_container_width=True):
+                st.session_state.chat_history = []
+                st.rerun()
+
+        with col_chat1:
+            # Display chat history
+            for chat in st.session_state.chat_history:
+                with st.chat_message("user"):
+                    st.write(chat['query'])
+                with st.chat_message("assistant"):
+                    st.write(chat['response'])
+                    if chat.get('sources'):
+                        with st.expander("📚 Sources"):
+                            for s in chat['sources']:
+                                st.caption(f"{s['source']} (Rel: {s['relevance']:.2f})")
+                                
+            # Chat input
+            if query := st.chat_input("Ask a question about Aadhaar data..."):
+                with st.chat_message("user"):
+                    st.write(query)
+                
+                with st.chat_message("assistant"):
+                    with st.spinner("Thinking..."):
+                        result = st.session_state.chatbot.chat(query, top_k=3)
+                        st.write(result['response'])
+                        if result.get('sources'):
+                            with st.expander("📚 Sources"):
+                                for s in result['sources']:
+                                    st.caption(f"{s['source']} (Rel: {s['relevance']:.2f})")
+                
+                # Save to history
+                st.session_state.chat_history.append(result)
 
 st.sidebar.markdown("---")
 st.sidebar.info("Built with ❤️ using Streamlit for UIDAI Hackathon")

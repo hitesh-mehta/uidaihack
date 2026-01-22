@@ -79,7 +79,7 @@ if __name__ == "__main__":
     import sys
     from pathlib import Path
     current_file = Path(__file__).resolve()
-    project_root = current_file.parent.parent.parent
+    project_root = current_file.parent.parent.parent.parent
     sys.path.append(str(project_root))
     
     from uidai_hackathon.src import config
